@@ -1,5 +1,6 @@
+var cheerio = require('cheerio');
 var express = require('express');
-var request = require('request');
+var req = require('request');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
@@ -8,6 +9,12 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(request, response) {
   // 1. http://waterdata.usgs.gov/usa/nwis/uv?07164500
   // #WaterInTheRiver means more than 1' at the gauge, with 2' being a nice looking river.
+  req('http://waterdata.usgs.gov/usa/nwis/uv?07164500', function(error, response, body) {
+    console.log(body);
+    $ = cheerio.load(body);
+    console.log($('div.stationContainer').text());
+  });
+    
   //
   //
   // 2. Information from Keystone (http://www.swt-wc.usace.army.mil/webdata/gagedata/KEYO2.current.html)
