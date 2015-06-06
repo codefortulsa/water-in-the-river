@@ -1,5 +1,7 @@
 var cheerio = require('cheerio');
 var express = require('express');
+var key = require('./lib/keystone');
+var gauge = require('./lib/gauge.js');
 var req = require('request');
 var app = express();
 
@@ -9,12 +11,6 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function(request, response) {
   // 1. http://waterdata.usgs.gov/usa/nwis/uv?07164500
   // #WaterInTheRiver means more than 1' at the gauge, with 2' being a nice looking river.
-  req('http://waterdata.usgs.gov/usa/nwis/uv?07164500', function(error, response, body) {
-    console.log(body);
-    $ = cheerio.load(body);
-    console.log($('div.stationContainer').text());
-  });
-    
   //
   //
   // 2. Information from Keystone (http://www.swt-wc.usace.army.mil/webdata/gagedata/KEYO2.current.html)
@@ -29,7 +25,12 @@ app.get('/', function(request, response) {
   // The values can change, at some point a person died below grand lake dam, which resulted in them turning it off while they looked for them. To make up for that, Keystone turned on. The charts aren't updated.
   // Again, ~6 hours after they say they will generate, riverside will start seeing water. 
 
-  response.send('Hello World!');
+  Promise.all([key,gauge]).then(function(res){
+    if(res[0] && res[1]){
+      response.send('Yes there is.');
+    }else{
+      response.send('No there isn\'t');
+  });
 });
 
 app.listen(app.get('port'), function() {
