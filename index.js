@@ -25,12 +25,21 @@ app.get('/', function(request, response) {
   // The values can change, at some point a person died below grand lake dam, which resulted in them turning it off while they looked for them. To make up for that, Keystone turned on. The charts aren't updated.
   // Again, ~6 hours after they say they will generate, riverside will start seeing water. 
 
+  output = "<h1>";
   Promise.all([key(),gauge()]).then(function(res){
-    if(res[0]==true && res[1]==true){
-      response.send('Yes there is.');
-    }else{
-      response.send('No there isn\'t');
+    gaugeLevel = res[1];
+    if (res[1] >= 2.) {
+      output += "Yes.";
+    } else if (res[1] >= 1.) {
+      output += "A little.";
+    } else if (res[2]) {
+      console.log(res[2]);
+    } else {
+      output += "No.";
     }
+    output += "</h1>";
+    output += "Guage Level: " + gaugeLevel;
+    response.send(output);
   });
 });
 
