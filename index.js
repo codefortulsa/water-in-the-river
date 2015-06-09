@@ -38,7 +38,7 @@ app.get('/', function(request, response) {
       output += "No.";
     }
     output += "</h1>";
-    output += "Guage Level: " + gaugeLevel;
+    output += "Gauge Level: " + gaugeLevel;
     response.send(output);
   });
 });
