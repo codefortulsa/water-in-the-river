@@ -38,7 +38,7 @@ app.get('/', function(request, response) {
       output += "No.";
     }
     output += "</h1>";
-    output += "Gauge Level: " + gaugeLevel;
+    output += "Gauge Level: " + gaugeLevel + " feet";
     response.send(output);
   });
 });
