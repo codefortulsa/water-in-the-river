@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<title>USGS Current Conditions for USGS 07164500 Arkansas River at Tulsa, OK
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="P3P" content="policyref=&quot;http://waterdata.usgs.gov/w3c/p3p.xml&quot;">
+<link rel="P3Pv1" href="http://waterdata.usgs.gov/w3c/p3p.xml" type="text/xml">
+<link rel="alternate" type="application/rss+xml" title="USGS Water Data for the Nation and USGS Water Services News" href="http://help.waterdata.usgs.gov/news/rss/">
+<link rel="stylesheet" type="text/css" href="gauge3_files/USGS_common.css">
+<link rel="stylesheet" type="text/css" href="gauge3_files/USGS_custom.css">
+<!--<link rel="stylesheet" type="text/css" href="/nwisweb/stylesheets/nwisweb.css" />-->
+
+<!-- JF - media queries - responsive design - different device widths  -->
+<link rel="stylesheet" media="screen and (min-width: 180px) and (max-width: 450px)" href="gauge3_files/nwiswebfluidsmallest.css">
+<link rel="stylesheet" media="screen and (min-width: 450px) and (max-width: 900px)" href="gauge3_files/nwiswebfluid.css">
+<link rel="stylesheet" media="screen and (min-width: 900px)" href="gauge3_files/nwisweb.css">
+
+<!--
+<link rel="stylesheet" media="screen and (min-width: 450px) and (max-width: 770px)" href="/nwisweb/stylesheets/nwiswebfluid.css" />
+<link rel="stylesheet" media="screen and (min-width: 770px)" href="/nwisweb/stylesheets/nwisweb.css" />
+-->
+<script async="" src="gauge3_files/www-widgetapi.js" id="www-widgetapi-script" type="text/javascript"></script><script src="gauge3_files/iframe_api"></script><script src="gauge3_files/analytics.js" async=""></script><script src="gauge3_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="gauge3_files/respond.js"></script>
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" media="all" href="/nwisweb/stylesheets/nwisweb.css"/>
+<![endif]-->
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    <!--
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-25350863-1']);
+      _gaq.push(['_gat._anonymizeIp']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    // -->
+    //]]>
+</script>
+ 
+<!--<noscript>Warning: Javascript must be enabled to use all the features on this page!</noscript>-->
+
+<script type="application/javascript" src="gauge3_files/usgs-analytics.js"></script><script defer="defer" src="gauge3_files/Universal-Federated-Analytics-Min.js" type="text/javascript" id="_fed_an_ua_tag"></script><script defer="defer" src="gauge3_files/usa-search.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript" src="gauge3_files/jquery_004.js"></script>
+<script type="text/javascript" src="gauge3_files/jquery-ui.js"></script><script src="gauge3_files/remote.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="gauge3_files/jquery-ui-1.css" media="screen">
+
+<script type="text/javascript" src="gauge3_files/jquery_005.js"></script>
+<link rel="stylesheet" type="text/css" href="gauge3_files/jquery.css">
+
+<script type="text/javascript" src="gauge3_files/modernizr.js"></script>
+
+<link rel="stylesheet" href="gauge3_files/jquery-ui.css">
+<link rel="stylesheet" href="gauge3_files/theme.css">
+<script type="text/javascript" src="gauge3_files/jquery.js"></script><script src="gauge3_files/stats.js" type="text/javascript"></script>
+<!--<script type="text/javascript" src="/nwisweb/javascripts/jquery.tablesorter.js"></script>-->
+<script type="text/javascript" src="gauge3_files/jquery_003.js"></script>
+
+<script type="text/javascript" src="gauge3_files/jquery_002.js"></script>
+
+
+
+<script type="text/javascript" src="gauge3_files/xp_progress.js"></script>
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    <!--
+
+    //jQuery(document).ready(function() {
+    jQuery(function() {
+
+      // State Specific Text
+      //-------------------------------------------------
+      //jQuery("#statewide_tx").hide();
+
+      // Toggle the statewide text with class
+      jQuery(".statewide_tx_header_div").click(function() {
+             jQuery(this).next("#statewide_tx").slideToggle(500);
+
+             var divText = jQuery(".statewide_tx_header_div").html();
+
+             if (divText.indexOf('Click for') != -1) {
+               //jQuery(".statewide_tx_header_div span").replaceWith( "<span id='statewide_header_tx'>Click to hide state-specific text</span>" );
+
+               jQuery("#statewide_header_tx").replaceWith( "<span id='statewide_header_tx'>Click to hide state-specific text</span>" );
+
+               jQuery("#collapsingIcon").removeClass('ui-icon-circle-plus');
+               jQuery("#collapsingIcon").addClass('ui-icon-circle-minus');
+
+             } else {
+               //jQuery(".statewide_tx_header_div span").replaceWith( "<span id='statewide_header_tx'>Click for state-specific text</span>" );
+
+               jQuery("#statewide_header_tx").replaceWith( "<span id='statewide_header_tx'>Click for state-specific text</span>" );
+
+               jQuery("#collapsingIcon").removeClass('ui-icon-circle-minus');
+               jQuery("#collapsingIcon").addClass('ui-icon-circle-plus');
+             }
+
+      });
+
+      // News Text
+      //-------------------------------------------------
+      //jQuery("#news_tx").hide();
+
+      // Toggle the news text with class
+      jQuery("#news_header").click(function() {
+             jQuery(this).next("#news_tx").slideToggle(500);
+
+             var divText = jQuery("#news_header").html();
+
+             if (divText.indexOf('Click for') != -1) {
+
+               jQuery("#news_header_tx").replaceWith( "<span id='news_header_tx'>Click to hide</span>" );
+
+               jQuery("#collapsingNewsIcon").removeClass('ui-icon-circle-plus');
+               jQuery("#collapsingNewsIcon").addClass('ui-icon-circle-minus');
+
+               jQuery("#news_header").removeClass('news_tx_header_div');
+               jQuery("#news_header").addClass('news_tx_header_div_expanded');
+
+             } else {
+
+               jQuery("#news_header_tx").replaceWith( "<span id='news_header_tx'>Click for</span>" );
+
+               jQuery("#collapsingNewsIcon").removeClass('ui-icon-circle-minus');
+               jQuery("#collapsingNewsIcon").addClass('ui-icon-circle-plus');
+
+               jQuery("#news_header").removeClass('news_tx_header_div_expanded');
+               jQuery("#news_header").addClass('news_tx_header_div');
+             }
+
+      });
+
+      // Station Text
+      //-------------------------------------------------
+      //jQuery("#station_tx").hide();
+
+      // Toggle the station text with class
+      jQuery("#station_header").click(function() {
+             jQuery(this).next("#station_tx").slideToggle(500);
+
+             var divText = jQuery("#station_header").html();
+
+             if (divText.indexOf('Click for') != -1) {
+
+               jQuery("#station_header_tx").replaceWith( "<span id='station_header_tx'>Click to hide</span>" );
+
+               jQuery("#collapsingStationIcon").removeClass('ui-icon-circle-plus');
+               jQuery("#collapsingStationIcon").addClass('ui-icon-circle-minus');
+
+             } else {
+
+               jQuery("#station_header_tx").replaceWith( "<span id='station_header_tx'>Click for</span>" );
+
+               jQuery("#collapsingStationIcon").removeClass('ui-icon-circle-minus');
+               jQuery("#collapsingStationIcon").addClass('ui-icon-circle-plus');
+
+             }
+
+      });  
+      
+      // Round corners on html5 button using only css (IE version 8 and lower need extra help)
+      //-------------------------------------------------
+      if (!Modernizr.borderradius) {
+            jQuery.getScript("/nwisweb/javascripts/jquery.corner.js", function() {
+              jQuery(".btn").corner();
+              jQuery(".mapperbtn").corner();
+            });
+      }
+
+      // If User selects the output sites to map option, force xml
+      //-------------------------------------------------
+      jQuery("input[type=radio][value=nwis_mapper]").change(function(){
+          //alert("Output sites on a map radio was selected");          
+          jQuery("#sitefile_output_format").val("xml");          
+      });      
+      
+      // If User selects a file as search criteria, disable the output sites to map option.
+      //-------------------------------------------------
+      if ( jQuery("#site_no_file_attachment").length || jQuery("#parameter_cd_file_attachment").length ) {
+         //jQuery("#nwis_mapper").attr('disabled', true);
+         jQuery("input[type=radio][value=nwis_mapper]").attr("disabled",true);
+
+         jQuery('#label_nwis_mapper').css({ opacity: 0.4 });
+         jQuery('div[id^="label_"]').css({ display: "inline" });
+
+         jQuery("#fileOfSitesMsg").append("* Selecting this search criteria disables the Show sites on a map option which is currently incompatible with file attachments.");
+         jQuery("#fileOfPmCodesMsg").append("* Selecting this search criteria disables the Show sites on a map option which is currently incompatible with file attachments.");
+      } else {
+         //jQuery("#nwis_mapper").attr('disabled', false);
+         jQuery("input[type=radio][value=nwis_mapper]").attr("disabled",false);
+         jQuery('div[id^="label_"]').css({ display: "inline" });
+      }
+
+      // Plone Help
+      //-------------------------------------------------
+            // Testing qTip, a jQuery plug-in for ToolTips
+      // Match all <A/> links with a title tag and use it as the rollover content (default).
+      // -------------------------------------------------
+      jQuery('a[title]').qtip();
+
+      // Finds all <a href's with ids. If an id exists,
+      // run a get request into Plone, find the div with the same id,
+      // and update the title attribute so hover will populate with Plone info
+      // -------------------------------------------------
+
+      jQuery('a').each(function(){
+           var thisID       = jQuery(this).attr('id');
+           var thisHREF     = jQuery(this).attr('href');
+
+           var getTextFromPlone;
+           var partialPloneURL;
+           var pageInPloneUsingProxy;
+
+           // Search href so help data is retrieved from appropriate plone page
+           if (thisHREF && thisID) {
+               //alert("thisID:" + thisID + " thisHREF:" + thisHREF);
+
+               // Looking for Plone or help.waterdata.usgs.gov in URL - basically only help links
+               getTextFromPlone = thisHREF.indexOf("/Plone/");
+               if (getTextFromPlone > -1) {
+                  // Get URL string after /Plone/
+                  partialPloneURL = thisHREF.split('/Plone/')[1];
+                  pageInPloneUsingProxy = 'http://waterdata.usgs.gov/exthelp/' + partialPloneURL;
+               }
+
+               getTextFromPlone = thisHREF.indexOf("/help.waterdata.usgs.gov/");
+               if (getTextFromPlone > -1) {
+                   // Get URL string after /help.waterdata.usgs.gov/
+                   partialPloneURL = thisHREF.split('/help.waterdata.usgs.gov/')[1];
+                   pageInPloneUsingProxy = 'http://waterdata.usgs.gov/exthelp/' + partialPloneURL;
+               }
+
+           }
+
+           if (thisID) {
+               //alert("Testing finding <a href's with IDs = " + thisID + " URL = " + thisHREF + " pageInPloneUsingProxy = " + pageInPloneUsingProxy);
+
+              var origTitle = jQuery('#'+thisID).attr("title");
+
+              jQuery('#'+thisID).mouseover(function (e) {
+              
+                 //var getURL = "http://webvadevvs03.er.usgs.gov/exthelp/codes-and-parameters/codes";
+                 var getURL = pageInPloneUsingProxy;
+
+                 var origTitlePlusData = '';
+
+                 jQuery.ajax({
+
+                   url: getURL,
+                   dataType: "html",
+                   success: function (data) {
+                      var data          = jQuery(data).find('.'+thisID);
+                      origTitlePlusData = origTitle + ' <BR><BR> ' + data.html();
+
+                      if (data.html() != null) {
+                         jQuery('#'+thisID).attr('title', origTitlePlusData);
+                      }
+                   }
+                 });
+              });
+
+ 	      // Makes the ToolTip delay so that you can click on a URL in the help text
+ 	      jQuery(this).qtip({
+ 		 hide: {
+ 		    delay:500, // Give a small delay to allow the user to mouse over it
+ 		    fixed:true
+ 		 },
+ 		 style: {
+ 		    name: 'dark',
+ 		    style: {
+ 		       border: 1,
+ 		       cursor: 'pointer',
+ 		       padding: '5px 8px',
+ 		       name: 'blue'
+ 		    },
+ 		 border: {},
+ 		 tip: true     // Apply a tip at the default tooltip corner
+ 		 }
+ 	      });
+
+
+           } // End of -> if(thisID)
+      });   // End of -> each function
+
+
+
+
+      // Processing Bar
+      //-------------------------------------------------
+      // If the loading bar exists, remove it
+
+      var barChk = jQuery(".loading").text();
+      //alert('loading=' + barChk);
+
+      if (barChk) {
+         jQuery(window).load(function() {
+             processingBar.hideBar();
+             jQuery("#loading").fadeOut("slow",function() { jQuery("#loading").remove(); });
+         });
+      }
+
+
+      // DatePicker
+      //-------------------------------------------------
+      
+      // Calendar Date Picker
+      //-------------------------------------------------
+      var http_text  = window.location.href.substring(0,location.href.indexOf("?") + 1);
+      //alert(http_text);
+      var uv_search  = http_text.search(/uv/i);
+      var dv_search  = http_text.search(/dv/i);
+
+      //alert("Only executing datepicker jquery code where necessary...");
+      //alert("uv_search " + uv_search);
+      //alert("dv_search " + dv_search);
+
+      // Div ID begin_date is present
+      //
+      //if(jQuery( "#begin_date" ).length > 0) {
+
+         if(uv_search > -1)
+           {
+            jQuery( "#begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(2007,10-1,01), maxDate: '+1d', yearRange: "2007:+0" });
+            jQuery( "#end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(2007,10-1,01), maxDate: '+1d', yearRange: "2007:+0"});
+
+            jQuery( "#rt_begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(2007,10-1,01), maxDate: '+1d', yearRange: "2007:+0" });
+            jQuery( "#rt_end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(2007,10-1,01), maxDate: '+1d', yearRange: "2007:+0" });
+           }
+         else if(dv_search > -1)
+           {
+            jQuery( "#begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+            jQuery( "#end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+
+            jQuery( "#rt_begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+            jQuery( "#rt_end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+           }
+         else
+           {
+            jQuery( "#begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+            jQuery( "#end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+
+            jQuery( "#rt_begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+            jQuery( "#rt_end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+           }
+
+         if(jQuery( "#por_begin_date" ).length > 0)
+           {
+            jQuery( "#por_begin_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1900,1-1,01), maxDate: '+1d', yearRange: "1900:+0" });
+            jQuery( "#por_end_date" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1900,1-1,01), maxDate: '+1d', yearRange: "1900:+0" });
+           }
+        //}
+
+      //jQuery( "#start_dt_id" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+      //jQuery( "#end_dt_id" ).datepicker({ dateFormat: jQuery.datepicker.W3C, changeMonth: true, changeYear: true, minDate: new Date(1800,1-1,01), maxDate: '+1d', yearRange: "1800:+0" });
+
+
+
+
+     // TableSorter - New Version with Fixed Headers
+     //-------------------------------------------------
+          //jQuery("table").tablesorter({
+     jQuery(".dataList").tablesorter({
+            //selectorHeaders: '> thead th, > thead td',
+            //widthFixed : true,
+	    headerTemplate : '{content} {icon}', // Add icon for jui theme; new in v2.7!
+	    widgets: ["columns", "filter", "stickyHeaders", "uitheme", "zebra"] ,
+	    //sortList: [ [0,0], [1,0], [2,0] ],   // Sorts on first 3 cols
+	    widgetOptions: {
+	      // css class name applied to the sticky header row (tr)
+	      stickyHeaders : 'tablesorter-stickyHeader',
+	      zebra   : ["ui-widget-content even", "ui-state-default odd"],
+	      uitheme : 'jui'
+	    }
+     });
+
+     // Exception for Peak data table with superscripts
+     //-------------------------------------------------
+     jQuery(".dataListWithSuperscript").tablesorter({
+            //selectorHeaders: '> thead th, > thead td',
+            //widthFixed : true,
+	    headerTemplate : '{content} {icon}', // Add icon for jui theme; new in v2.7!
+	    widgets: ["columns", "filter", "stickyHeaders", "uitheme", "zebra"] ,
+	    //sortList: [ [0,0], [1,0], [2,0] ],   // Sorts on first 3 cols
+	    widgetOptions: {
+	      // css class name applied to the sticky header row (tr)
+	      stickyHeaders : 'tablesorter-stickyHeader',
+	      zebra   : ["ui-widget-content even", "ui-state-default odd"],
+	      uitheme : 'jui'
+	    },
+            textExtraction: {
+              // 3rd and 4th colunms for Peak table sorting only on span tag, ignoring sup (superscript) tag
+              2: function(node, dataList, cellIndex){ return jQuery(node).find("span").text(); },
+              3: function(node, dataList, cellIndex){ return jQuery(node).find("span").text(); }
+            }
+
+     });
+
+     // Click a row and it will highlight for greater visibility
+     //-------------------------------------------------
+     jQuery('.dataList td').click(
+           	function (event) { jQuery(this).parent('tr').toggleClass('rowclick');
+     });
+
+     // Click a row and it will highlight for greater visibility
+     //-------------------------------------------------
+     jQuery('.dataListWithSuperscript td').click(
+           	function (event) { jQuery(this).parent('tr').toggleClass('rowclick');
+     });
+
+
+     // Water-Use
+     //-------------------------------------------------
+     // Not needed
+
+
+   });  //end of document.ready
+
+   // -->
+   //]]>
+</script>
+ 
+<!--<noscript>Warning: Javascript must be enabled to use all the features on this page!</noscript>-->
+
+
+<style>@-webkit-keyframes popvvcphxmwvddwebpfdjdeaigiboedmohmnw {50% {-webkit-transform:scale(1.2);}100% {-webkit-transform:scale(1);}}@keyframes popvvcphxmwvddwebpfdjdeaigiboedmohmnw {50% {-webkit-transform:scale(1.2);transform:scale(1.2);}100% {-webkit-transform:scale(1);transform:scale(1);}}#vvcphxmwvddwebpfdjdeaigiboedmohmnw{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;border:solid 2px #fff !important;color:#fff !important;display:block !important;height:auto !important;margin:0 !important;opacity:0.9 !important;padding:7px 10px !important;position:fixed !important;visibility:visible !important;width:auto !important;z-index:2147483647 !important;-moz-border-radius:5px !important;border-radius:5px !important;-moz-box-shadow:0px 0px 20px #000 !important;box-shadow:0px 0px 20px #000 !important;}.vvcphxmwvddwebpfdjdeaigiboedmohmnw-blocked{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;color:#AAA !important;display:inline !important;text-decoration:line-through !important;}#vvcphxmwvddwebpfdjdeaigiboedmohmnw br{display:block !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;}#vvcphxmwvddwebpfdjdeaigiboedmohmnw span{background:transparent !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;}#vvcphxmwvddwebpfdjdeaigiboedmohmnw div{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;border:0 !important;margin:0 !important;padding:0 !important;width:auto !important;letter-spacing:normal !important;font:13px Arial,Helvetica !important;text-align:left !important;text-shadow:none !important;text-transform:none !important;word-spacing:normal !important;}#vvcphxmwvddwebpfdjdeaigiboedmohmnw a{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;font-weight:normal !important;background:none !important;text-decoration:underline !important;color:#fff !important;}a#vvcphxmwvddwebpfdjdeaigiboedmohmnw-gear{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;text-decoration:none !important;position:absolute !important;display:none !important;font-size:20px !important;width:20px !important;height:20px !important;line-height:20px !important;text-align:center !important;background-color:rgba(255,255,255,.8) !important;background-image:url(resource://firefox-at-ghostery-dot-com/ghostery/data/images/gear.svg) !important;background-size:16px 16px !important;background-position:center center !important;background-repeat:no-repeat !important;text-decoration:none !important;}a#vvcphxmwvddwebpfdjdeaigiboedmohmnw-gear:hover{-webkit-animation-name:popvvcphxmwvddwebpfdjdeaigiboedmohmnw !important;animation-name:popvvcphxmwvddwebpfdjdeaigiboedmohmnw !important;-webkit-animation-duration:0.3s !important;animation-duration:0.3s !important;}#vvcphxmwvddwebpfdjdeaigiboedmohmnw:hover #vvcphxmwvddwebpfdjdeaigiboedmohmnw-gear{text-decoration:none !important;display:inline-block !important;}#vvcphxmwvddwebpfdjdeaigiboedmohmnw hr{visibility:hidden !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;height:1em;}@media print{#vvcphxmwvddwebpfdjdeaigiboedmohmnw{display:none !important;}}</style></head>
+
+<body>
+
+<div id="nwisweb_header">
+
+<!-- SERVER LEVEL BANNER -->
+
+<script type="text/javascript">
+//<![CDATA[
+<!--
+
+function server_level_navigation_manager()
+ {
+ var local_cgi_url_base = "/nwis";
+ var national_host_url  = "";
+ var nwis_mapper_url    = "http://maps.waterdata.usgs.gov/";
+ //alert(national_host_url);
+ var office_index  = document.select_office.office.selectedIndex;
+ var office  = document.select_office.office.options[ office_index ].value;
+ var my_office = "usa";
+ if(office == my_office) {
+   var url = local_cgi_url_base + '/'; }
+ else {
+   var url = national_host_url + '/' + office + "/nwis/"; }
+ var program_index = document.select_office.program.selectedIndex;
+ var program = document.select_office.program.options[ program_index ].value;
+ if (program == 'mapper') {
+   if (office != 'usa') {
+     //var url = nwis_mapper_url + '?state=' + office ;
+     var url = nwis_mapper_url + 'mapper/index.html?state=' + office; }
+   else {
+     var url = nwis_mapper_url ; }
+     //window.open(url);
+     window.location = (url); }
+ else {
+   var url = url + program;
+   window.location = (url);}
+ return (false);
+ }
+//-->
+//]]>
+</script>
+ 
+<!--<noscript>Warning: Javascript must be enabled to use all the features on this page!</noscript>-->
+
+<form name="select_office" action="/nwis" id="select_office">
+
+<!-- BEGIN USGS Header Template -->
+  <div id="usgscolorband">
+    <div id="usgsbanner">
+      <div id="usgsidentifier"><a onmousedown="_sendEvent('Outbound','www.usgs.gov','/',0);" href="http://www.usgs.gov/"><img src="gauge3_files/USGS_header_graphic_usgsIdentifier_white.jpg" alt="USGS - science for a changing world" title="U.S. Geological Survey Home Page" height="72" width="178"></a>
+      </div>
+      <div id="usgsccsabox">
+        <div id="usgsccsa">
+          <br><a onmousedown="_sendEvent('Outbound','www.usgs.gov','/',0);" href="http://www.usgs.gov/">USGS Home</a>
+          <br><a onmousedown="_sendEvent('Outbound','www.usgs.gov','/ask/',0);" href="http://www.usgs.gov/ask/">Contact USGS</a>
+          <br><a onmousedown="_sendEvent('Outbound','www.usgs.gov','/search/',0);" href="http://www.usgs.gov/search/">Search USGS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="usgstitle">
+    <p><a href="http://waterdata.usgs.gov/nwis">National Water Information System: Web Interface</a></p>
+  </div>
+<!-- END USGS Header Template -->
+
+<!-- BEGIN Nav Bar -->
+<div id="navbar">
+   <div id="subtitle">
+      <b><a onmousedown="_sendEvent('Outbound','water.usgs.gov','/',0);" href="http://water.usgs.gov/"><u>USGS Water Resources</u></a></b>&nbsp; &nbsp; 
+      <!--<div><a href="#top_of_page"></a></div>-->
+   </div>
+   <div id="navdropdowns">
+      <span id="programlist">
+         <label accesskey="c" for="program"><strong>Data Category:</strong></label><br>
+<select name="program" id="program" tabindex="1">
+<option value="nwis">Home</option>
+<option value="rt" selected="selected">Current Conditions</option>
+<option value="si">Site Information</option>
+<option value="mapper">Mapper</option>
+<option value="sw">Surface Water</option>
+<option value="gw">Groundwater</option>
+<option value="qw">Water Quality</option>
+<option value="wu">Water Use</option>
+</select>
+      </span>
+      <span id="statelist">
+         <label accesskey="A" for="office"><strong>Geographic Area:</strong></label><br>
+<select onchange="return server_level_navigation_manager();" name="office" id="office" tabindex="1">
+ <option selected="selected" value="usa">United States
+</option><option value="al">Alabama</option>
+<option value="ak">Alaska</option>
+<option value="aq">American Samoa</option>
+<option value="az">Arizona</option>
+<option value="ar">Arkansas</option>
+<option value="ca">California</option>
+<option value="co">Colorado</option>
+<option value="ct">Connecticut</option>
+<option value="de">Delaware</option>
+<option value="dc">Dist. of Columbia</option>
+<option value="fl">Florida</option>
+<option value="ga">Georgia</option>
+<option value="gu">Guam</option>
+<option value="hi">Hawaii</option>
+<option value="id">Idaho</option>
+<option value="il">Illinois</option>
+<option value="in">Indiana</option>
+<option value="ia">Iowa</option>
+<option value="ks">Kansas</option>
+<option value="ky">Kentucky</option>
+<option value="la">Louisiana</option>
+<option value="me">Maine</option>
+<option value="md">Maryland</option>
+<option value="ma">Massachusetts</option>
+<option value="mi">Michigan</option>
+<option value="mn">Minnesota</option>
+<option value="ms">Mississippi</option>
+<option value="mo">Missouri</option>
+<option value="mt">Montana</option>
+<option value="ne">Nebraska</option>
+<option value="nv">Nevada</option>
+<option value="nh">New Hampshire</option>
+<option value="nj">New Jersey</option>
+<option value="nm">New Mexico</option>
+<option value="ny">New York</option>
+<option value="nc">North Carolina</option>
+<option value="nd">North Dakota</option>
+<option value="mp">Northern Mariana Islands</option>
+<option value="oh">Ohio</option>
+<option value="ok">Oklahoma</option>
+<option value="or">Oregon</option>
+<option value="pa">Pennsylvania</option>
+<option value="pr">Puerto Rico</option>
+<option value="ri">Rhode Island</option>
+<option value="sc">South Carolina</option>
+<option value="sd">South Dakota</option>
+<option value="tn">Tennessee</option>
+<option value="tx">Texas</option>
+<option value="ut">Utah</option>
+<option value="vt">Vermont</option>
+<option value="vi">Virgin Islands</option>
+<option value="va">Virginia</option>
+<option value="wa">Washington</option>
+<option value="wv">West Virginia</option>
+<option value="wi">Wisconsin</option>
+<option value="wy">Wyoming</option>
+</select>
+      </span>
+      <span id="maingobutton">
+         <input accesskey="g" value="GO" onclick="return server_level_navigation_manager();" type="submit">
+      </span>
+   </div>
+</div>
+<div class="clear"></div>
+<!-- END Nav Bar -->
+</form>
+<!--<a name="top_of_page"></a>-->
+
+
+<!-- noscript tag replacement-displays message if JavaScript is not enabled -->
+
+<div style="display: none;" id="noScript">Warning: Javascript must be enabled to use all the features on this page!
+<script type="text/javascript">
+    //<![CDATA[
+    <!--
+document.getElementById('noScript').style.display = 'none';
+    // -->
+    //]]>
+</script>
+</div>
+
+
+
+<!-- NWISWeb Page Loading Script -->
+
+<div id="_xpbar0" style="visibility: hidden; position: relative; overflow: hidden; width: 300px; height: 15px; background-color: white; border-color: black; border-width: 1px; border-style: solid; font-size: 1px;"><span id="blocks0" style="left: 321px; position: absolute; font-size: 1px;"><span style="background-color:blue; left:-0px; font-size:1px; position:absolute; width:15px; height:15px; -Moz-opacity:1"></span><span style="background-color:blue; left:-16px; font-size:1px; position:absolute; width:15px; height:15px; -Moz-opacity:0.8571428571428571"></span><span style="background-color:blue; left:-32px; font-size:1px; position:absolute; width:15px; height:15px; -Moz-opacity:0.7142857142857143"></span><span style="background-color:blue; left:-48px; font-size:1px; position:absolute; width:15px; height:15px; -Moz-opacity:0.5714285714285714"></span><span style="background-color:blue; left:-64px; font-size:1px; position:absolute; width:15px; height:15px; -Moz-opacity:0.42857142857142855"></span><span style="background-color:blue; left:-80px; font-size:1px; position:absolute; width:15px; height:15px; -Moz-opacity:0.2857142857142857"></span><span style="background-color:blue; left:-96px; font-size:1px; position:absolute; width:15px; height:15px; -Moz-opacity:0.14285714285714277"></span></span></div>
+<p></p>
+
+
+
+<!-- SYSTEM MESSAGE -->
+
+
+<!-- Mobile Detection -->
+
+
+<!-- NWISWeb System Message -->
+
+<div class="collapse_div">
+<div id="news_header" class="news_tx_header_div_expanded">
+  <span id="collapsingNewsIcon" class="ui-icon ui-icon-circle-minus"></span>
+  <span id="news_header_tx">Click to hide</span>News Bulletins
+</div>
+<div id="news_tx">
+<ul>
+    <li>
+       April 8, 2015  
+    </li>
+    <li>Try our new <a href="http://m.waterdata.usgs.gov/">Mobile-friendly water data site </a> from your
+mobile device! </li>
+    <li>New improved user interface.</li>
+    <li>
+       <span style="text-decoration:underline;"><a href="http://help.waterdata.usgs.gov/news">Full News</a></span> 
+       <a href="http://help.waterdata.usgs.gov/news/rss/"><img src="gauge3_files/rss_icon.gif" alt="RSS icon" border="0"></a>
+    </li>    
+</ul>
+
+</div>
+</div>
+
+
+
+<div class="clear"></div>
+
+<!-- PAGE_TITLE -->
+
+
+<!-- STATEWIDE TEXT -->
+
+
+</div> <!-- nwisweb_header -->
+
+<b></b>
+<h2>USGS 07164500 Arkansas River at Tulsa, OK</h2>
+<div>
+
+<div class="stationContainer">
+
+<h2><a href="http://waterdata.usgs.gov/nwis/?provisional">PROVISIONAL DATA SUBJECT TO REVISION</a></h2>
+
+<!-- STATION LEVEL NAVIGATION -->
+
+<script type="text/javascript">
+<!--
+function station_navigation_manager_1()
+ {
+ var national_host_url  = "http://nwis.waterdata.usgs.gov";
+ var local_cgi_url_base = "";
+ var program_index      = document.station_navigation_1.program.selectedIndex;
+ var program    = document.station_navigation_1.program.options[ program_index ].value;
+ var site_no    = document.station_navigation_1.site_no.value;
+ var agency_cd  = document.station_navigation_1.agency_cd.value;
+ var ref_module = '';
+ if(program.match(/dv|dvstat|monthly|annual/)){
+         ref_module = "";
+      if(ref_module == ""){
+          ref_module = "&amp;referred_module=sw"
+      }
+     }
+ // Hardcoding stay_local variable here due to javascript incompatiblities
+ var stay_local = 0;
+ if (program_index <= 4 || program.match(/dv|dvstat|monthly|annual|measurements|wys_rpt/)){
+   stay_local = 1;
+   }
+ //alert("stay_local " + stay_local);
+ var url = '';
+ if (program == "epa_huc_surf"){
+   url = "http://cfpub.epa.gov/surf/huc.cfm?huc_code=11110101";
+   }
+ else if (program == "ida"){
+   url = "http://ida.water.usgs.gov/ida/available_records.cfm?sn=07164500";
+   }
+ else if (program == "adr"){
+   url = "http://wdr.water.usgs.gov/wy2014/pdfs/07164500.2014.pdf";
+   }
+ else if (program == "awl"){
+   url = "http://groundwaterwatch.usgs.gov/AWLSites.asp?S=07164500";
+   }
+ else {
+   if (stay_local == 1){
+     url = "/nwis/";
+     }
+   else {
+     if (national_host_url){
+       url = "http://nwis.waterdata.usgs.gov/ok/nwis/";
+       }
+     else {
+       url = "/nwis/";
+       }
+     }
+     var dv_pattern = /dvstat|monthly|annual/;
+     if(program.match(dv_pattern)){
+       url =  url + program + "/?search_site_no=" + site_no + "&amp;agency_cd=" + agency_cd  + ref_module + "&amp;format=sites_selection_links";
+       }
+     else {
+       url =  url + program + "/?site_no=" + site_no + "&agency_cd=" + agency_cd + ref_module;
+       }
+   }
+ window.location = (url);
+ return (false);
+ }
+//-->
+</script>
+
+<!--<noscript>Warning: Javascript must be enabled to use all the features on this page!</noscript>-->
+
+<form id="station_level_navigation_bar_form" name="station_navigation_1" action="/nwis">
+<div id="availableData">
+
+   <label accesskey="A" for="select_data_1"><font face="Verdana,Arial,Helvetica,sans-serif" color="#FFFFFF" size="-1">
+   <strong> &nbsp; Available data for this site &nbsp; </strong>
+   </font></label>
+
+   <font face="Verdana,Arial,Helvetica,sans-serif" color="#FFFFFF" size="-1">
+   <select onchange="return station_navigation_manager_1();" name="program" id="select_data_1">
+<option value="inventory">SUMMARY OF ALL AVAILABLE DATA</option>
+<option value="nwismap">Location map</option>
+<option value="uv" selected="selected">Time-series: &nbsp; Current/Historical Observations</option>
+<option value="dv">Time-series: &nbsp; Daily data</option>
+<option value="dvstat">Time-series: &nbsp; Daily statistics</option>
+<option value="monthly">Time-series: &nbsp; Monthly statistics</option>
+<option value="annual">Time-series: &nbsp; Annual statistics</option>
+<option value="peak">Surface-water: &nbsp; Peak streamflow</option>
+<option value="measurements">Surface-water: &nbsp; Field measurements</option>
+<option value="qwdata">Water-Quality: &nbsp; Field/Lab samples</option>
+<option value="ida">USGS Instantaneous-data archive: (Offsite) </option>
+<option value="wys_rpt">Water-Year Summary</option>
+<option value="epa_huc_surf">EPA Surf your watershed: Offsite</option>
+</select>
+   <input alt="Site Number" name="site_no" value="07164500" type="hidden">
+   <input alt="Agency Code" name="agency_cd" value="USGS" type="hidden">
+   <input alt="Submit" value="GO" onclick="return station_navigation_manager_1()" type="submit">
+   </font>
+
+</div>
+<div class="clear"></div>
+</form>
+
+
+
+
+<div class="collapse_div">
+<div id="station_header" class="station_tx_header_div">
+  <span id="collapsingStationIcon" class="ui-icon ui-icon-circle-minus"></span>
+  <span id="station_header_tx">Click to hide</span>station-specific text 
+</div>
+<div id="station_tx">
+<font color="green" size="4"><b>Station operated in cooperation with
+the City of Tulsa and the Corps of Engineers.</b> <b><br></b></font>
+
+</div>
+</div>
+
+
+ This station managed by the Tulsa field office.<br><br>
+
+
+<form id="available_parameters_form" method="get" action="/nwis/uv">
+
+<div id="available_parameters_table">
+
+	<div class="available_parameters_float1"><!--<table cols="4" border="1" cellspacing="0">-->
+<table border="0" cellspacing="0">
+<thead>
+<tr>
+<th></th><th><font face="Verdana,Arial,Helvetica" size="-1">Available Parameters</font></th>
+<th colspan="2" align="center" nowrap="nowrap"> <font face="Verdana,Arial,Helvetica" size="-1">Available Period</font></th>
+
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="5%"><input id="all_available_parameters" class="available_parameters" alt="Check for Parameter Code" name="cb_all_00065_00060_00010_00300" type="checkbox"></td><td width="65%"><font face="Verdana,Arial,Helvetica" size="-1"><div id="check_all_parameters">All 4 Available Parameters for this site</div></font></td>
+<td>&nbsp;</td><td>&nbsp;</td>
+
+</tr>
+
+<tr>
+<td width="5%"><font face="Verdana,Arial,Helvetica" size="-1"><input id="checkbox_00065" class="available_parameters" alt="Check for Parameter Code" name="cb_00065" checked="checked" type="checkbox"></font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">00065 Gage height</font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">2007-10-01&nbsp;</font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">2015-06-14</font></td>
+ 
+</tr>
+ <tr>
+<td width="5%"><font face="Verdana,Arial,Helvetica" size="-1"><input id="checkbox_00060" class="available_parameters" alt="Check for Parameter Code" name="cb_00060" checked="checked" type="checkbox"></font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">00060 Discharge</font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">2007-10-11&nbsp;</font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">2015-06-14</font></td>
+ 
+</tr>
+ <tr>
+<td width="5%"><font face="Verdana,Arial,Helvetica" size="-1"><input id="checkbox_00010" class="available_parameters" alt="Check for Parameter Code" name="cb_00010" checked="checked" type="checkbox"></font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">00010 Temperature, water</font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">2007-11-21&nbsp;</font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">2015-06-14</font></td>
+ 
+</tr>
+ <tr>
+<td width="5%"><font face="Verdana,Arial,Helvetica" size="-1"><input id="checkbox_00300" class="available_parameters" alt="Check for Parameter Code" name="cb_00300" checked="checked" type="checkbox"></font></td>
+<td><font face="Verdana,Arial,Helvetica" size="-1">00300 Dissolved oxygen</font></td>
+<td nowrap="nowrap"><font face="Verdana,Arial,Helvetica" size="-1">2011-01-05&nbsp;</font></td>
+<td nowrap="nowrap"><font face="Verdana,Arial,Helvetica" size="-1">2015-06-14</font></td>
+ 
+</tr>
+ 
+</tbody>
+</table>
+</div>
+
+	<div class="available_parameters_float2"><label><font face="Verdana,Arial,Helvetica" size="-1"><strong>Output format</strong></font></label><br>
+	 <input id="gif_default" class="output_formats" alt="Format" name="format" value="gif_default" checked="checked" type="radio">Graph <br>
+ <input id="gif_stats" class="output_formats" alt="Format" name="format" value="gif_stats" type="radio">Graph w/ stats <br>
+ <input id="gif" class="output_formats" alt="Format" name="format" value="gif" type="radio">Graph w/o stats <br>
+ <input id="gif_mult_parms" class="output_formats" alt="Format" name="format" value="gif_mult_parms" type="radio">Graph w/ (up to 3) parms <br>
+ <input id="html" class="output_formats" alt="Format" name="format" value="html" type="radio">Table <br>
+ <input id="rdb" class="output_formats" alt="Format" name="format" value="rdb" type="radio">Tab-separated <br>
+</div>
+
+	<div class="available_parameters_float3">
+	    <div style="display:inline-block; float:right; margin-top:.3em;">
+	    <input name="site_no" value="07164500" type="hidden">
+	     
+	    <input id="go_available_button" value="GO" type="submit">	
+	    </div>
+	        <div style="float:left;">
+    <font face="Verdana,Arial,Helvetica" size="-1"><strong>Days</strong> &nbsp;(7)<br>
+      &nbsp; <input name="period" size="8" alt="Enter no of days"></font><br> &nbsp;  -- or -- <br>
+    <font face="Verdana,Arial,Helvetica" size="-1"><strong>Begin date</strong><br>
+      &nbsp; <input class="hasDatepicker" name="begin_date" id="begin_date" value="2015-06-07" size="8" alt="Enter Begin Date"></font><br>
+    <font face="Verdana,Arial,Helvetica" size="-1"><strong>End date</strong><br>
+      &nbsp; <input class="hasDatepicker" name="end_date" id="end_date" value="2015-06-14" size="8" alt="Enter End Date"></font><br>
+    </div>
+
+	</div>
+	
+	<div class="clear"></div>
+
+</div>
+
+</form>
+
+
+
+<font color="red" size="+1"><strong><a href="http://waterdata.usgs.gov/nwis/inventory/?site_no=07164500&amp;agency_cd=USGS">
+Summary of all available data for this site</a></strong></font>
+<br>
+<font size="+1"><strong>
+<a href="http://waterdata.usgs.gov/nwis/?IV_data_availability" target="_blank">Instantaneous-data availability statement</a>
+</strong></font>
+</div>
+
+</div>
+
+<div class="stationContainer">
+
+<hr>
+<div class="stationContainerHeading">
+<a name="gifno-99"><br><strong>Gage height, feet</strong></a>  
+<br>
+</div>
+
+Most recent instantaneous value: 8.90 &nbsp; 06-14-2015&nbsp; 08:30 CDT 
+ 
+
+
+<div class="clear"></div>
+
+<div class="stationContainerSubHeading">
+   <div id="table_07164500_11_00065" border="0" class="iv_graph_float1">    
+    <img src="gauge3_files/USGS_003.gif" alt="Graph of " height="384" border="0" width="576"> 
+   </div>
+   
+   <div class="iv_graph_float2">
+          <form id="form_mult_sites_07164500_11_00065" class="add_mult_sites" method="get" action="/nwis/uv">
+      <div>
+         <p>Add up to 2 more sites and replot for "Gage height, feet"</p>
+        <div class="helpBtn">
+         <a oldtitle="'Enter up to 2 site numbers separated by a comma. A site number consists of 8 to 15 digits'" href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#search_full_site_no" id="search_full_site_no"><span>?</span></a>
+        </div>&nbsp;Add site numbers
+        <div class="helpBtn NoteBtn">
+         <a oldtitle="Caution: When viewing a plot with multiple sites, it is important to understand the characteristics of data being plotted. For example, some parameters are measured from a reference point that varies from site to site, such as water-level depth below land surface datum for wells, and gage height for streams. Calculating the difference between values at sites with different altitudes would have limited meaning." href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#add_mult_sites" id="add_mult_sites"><span>Note</span></a>
+        </div>
+        <br>
+         <textarea tabindex="10" id="add_mult_sites_07164500_11_00065" class="add_mult_sites" alt="Number 8 to 15 long that uniquely defines a site" name="site_no" cols="20" rows="8">Enter up to 2 site numbers separated by a comma. A site number consists of 8 to 15 digits</textarea>
+         <input id="format_07164500_11_00065" name="format" value="gif_mult_sites" type="hidden">
+         <input id="parameter_07164500_11_00065" name="PARAmeter_cd" value="00065" type="hidden">
+         <input id="period_07164500_11_00065" name="period" value="7" type="hidden">
+        <br>
+         <input id="go_07164500_11_00065" class="go_mult_sites" value="GO" type="submit">
+        <br>
+      </div>
+     </form>
+   </div>
+   <div class="clear"></div>
+   
+   <font size="-1"> Create <a href="http://waterdata.usgs.gov/nwis/uv/?dd_cd=11_00065&amp;format=img_default&amp;site_no=07164500&amp;set_arithscale_y=on&amp;period=7">presentation-quality</a>
+     / <a href="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=07164500&amp;parm_cd=00065&amp;period=7">stand-alone</a>   graph. &nbsp; Subscribe to <div class="helpBtn"><a oldtitle="Subscribe to recieve e-mail or text messages when certain parameters, as measured by a USGS real-time data-collection station, exceed user-definable thresholds." href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#water_alert" id="water_alert"><span>?</span></a></div> <a onmousedown="_sendEvent('Outbound','water.usgs.gov','/wateralert/',0);" href="http://water.usgs.gov/wateralert/" target="_blank"> </a><a onmousedown="_sendEvent('Outbound','water.usgs.gov','/wateralert/subscribe2',0);" href="http://water.usgs.gov/wateralert/subscribe2?site_no=07164500&amp;parm=00065" target="_blank">WaterAlert</a> &nbsp; &nbsp; &nbsp;  </font>
+   <font size="-4"></font><br>
+   
+   <br>
+   <div class="addthis_toolbox addthis_default_style " addthis:url="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=07164500&amp;parm_cd=00065&amp;period=7" addthis:title="USGS graph">
+   <a onmousedown="_sendEvent('Outbound','www.addthis.com','/bookmark.php',0);" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4f4f8fe755190329" class="addthis_button_compact">Share this graph</a>
+   <span class="addthis_separator">|</span>
+   <a class="addthis_button_preferred_1"></a>
+   <a class="addthis_button_preferred_2"></a>
+   <a class="addthis_button_preferred_3"></a>
+   <a class="addthis_button_preferred_4"></a>
+   </div><br>
+
+
+</div>
+
+<!-- Stats table -->
+<div class="stationContainerSubHeading">
+
+</div>
+<div class="clear"></div>
+
+</div>
+
+<div class="stationContainer">
+
+<hr>
+<div class="stationContainerHeading">
+<a name="gifno-99"><br><strong>Discharge, cubic feet per second</strong></a>  
+<br>
+</div>
+
+Most recent instantaneous value: 40,000 &nbsp; 06-14-2015&nbsp; 08:30 CDT 
+ 
+
+
+<div class="clear"></div>
+
+<div class="stationContainerSubHeading">
+   <div id="table_07164500_12_00060" border="0" class="iv_graph_float1">    
+    <img src="gauge3_files/USGS_004.gif" alt="Graph of " height="384" border="0" width="576"> 
+   </div>
+   
+   <div class="iv_graph_float2">
+          <form id="form_mult_sites_07164500_12_00060" class="add_mult_sites" method="get" action="/nwis/uv">
+      <div>
+         <p>Add up to 2 more sites and replot for "Discharge, cubic feet per second"</p>
+        <div class="helpBtn">
+         <a oldtitle="'Enter up to 2 site numbers separated by a comma. A site number consists of 8 to 15 digits'" href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#search_full_site_no" id="search_full_site_no"><span>?</span></a>
+        </div>&nbsp;Add site numbers
+        <div class="helpBtn NoteBtn">
+         <a oldtitle="Caution: When viewing a plot with multiple sites, it is important to understand the characteristics of data being plotted. For example, some parameters are measured from a reference point that varies from site to site, such as water-level depth below land surface datum for wells, and gage height for streams. Calculating the difference between values at sites with different altitudes would have limited meaning." href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#add_mult_sites" id="add_mult_sites"><span>Note</span></a>
+        </div>
+        <br>
+         <textarea tabindex="10" id="add_mult_sites_07164500_12_00060" class="add_mult_sites" alt="Number 8 to 15 long that uniquely defines a site" name="site_no" cols="20" rows="8">Enter up to 2 site numbers separated by a comma. A site number consists of 8 to 15 digits</textarea>
+         <input id="format_07164500_12_00060" name="format" value="gif_mult_sites" type="hidden">
+         <input id="parameter_07164500_12_00060" name="PARAmeter_cd" value="00060" type="hidden">
+         <input id="period_07164500_12_00060" name="period" value="7" type="hidden">
+        <br>
+         <input id="go_07164500_12_00060" class="go_mult_sites" value="GO" type="submit">
+        <br>
+      </div>
+     </form>
+   </div>
+   <div class="clear"></div>
+   
+   <font size="-1"> Create <a href="http://waterdata.usgs.gov/nwis/uv/?dd_cd=12_00060&amp;format=img_default&amp;site_no=07164500&amp;period=7">presentation-quality</a>
+     / <a href="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=07164500&amp;parm_cd=00060&amp;period=7">stand-alone</a>   graph. &nbsp; Subscribe to <div class="helpBtn"><a oldtitle="Subscribe to recieve e-mail or text messages when certain parameters, as measured by a USGS real-time data-collection station, exceed user-definable thresholds." href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#water_alert" id="water_alert"><span>?</span></a></div> <a onmousedown="_sendEvent('Outbound','water.usgs.gov','/wateralert/',0);" href="http://water.usgs.gov/wateralert/" target="_blank"> </a><a onmousedown="_sendEvent('Outbound','water.usgs.gov','/wateralert/subscribe2',0);" href="http://water.usgs.gov/wateralert/subscribe2?site_no=07164500&amp;parm=00060" target="_blank">WaterAlert</a> &nbsp; &nbsp; &nbsp;  </font>
+   <font size="-4"></font><br>
+   
+   <br>
+   <div class="addthis_toolbox addthis_default_style " addthis:url="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=07164500&amp;parm_cd=00060&amp;period=7" addthis:title="USGS graph">
+   <a onmousedown="_sendEvent('Outbound','www.addthis.com','/bookmark.php',0);" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4f4f8fe755190329" class="addthis_button_compact">Share this graph</a>
+   <span class="addthis_separator">|</span>
+   <a class="addthis_button_preferred_1"></a>
+   <a class="addthis_button_preferred_2"></a>
+   <a class="addthis_button_preferred_3"></a>
+   <a class="addthis_button_preferred_4"></a>
+   </div><br>
+
+
+</div>
+
+<!-- Stats table -->
+<div class="stationContainerSubHeading">
+
+<table align="left" border="1">
+<caption><b> Daily discharge, cubic feet per second -- statistics for Jun 14 based on 50 years of record<a href="http://waterdata.usgs.gov/usa/nwis/dvstat/?site_no=07164500&amp;por_07164500_12=231235,00060,12"><font size="1"> more</font></a></b></caption>
+<thead>
+<tr align="center" valign="bottom">
+<th>Min<br>(1991)</th> <th>25th<br>percen-<br>tile</th> <th>Median</th> <th>Mean</th> <th>75th<br>percen-<br>tile</th> <th class="highlight2" nowrap="nowrap">Most Recent<br>Instantaneous<br>Value Jun 14</th> <th>Max<br>(1995)</th>
+</tr>
+</thead>
+<tbody>
+<tr align="center">
+<td>72</td> <td>3810</td> <td>9550</td> <td>14700</td> <td>17700</td> <td class="highlight2" nowrap="nowrap">40000</td> <td>111000</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="clear"></div>
+
+</div>
+
+<div class="stationContainer">
+
+<hr>
+<div class="stationContainerHeading">
+<a name="gifno-99"><br><strong>Temperature, water, degrees Celsius</strong></a>  
+<br>
+</div>
+
+Most recent instantaneous value: 23.2 &nbsp; 06-14-2015&nbsp; 08:30 CDT 
+ 
+
+
+<div class="clear"></div>
+
+<div class="stationContainerSubHeading">
+   <div id="table_07164500_14_00010" border="0" class="iv_graph_float1">    
+    <img src="gauge3_files/USGS.gif" alt="Graph of " height="384" border="0" width="576"> 
+   </div>
+   
+   <div class="iv_graph_float2">
+          <form id="form_mult_sites_07164500_14_00010" class="add_mult_sites" method="get" action="/nwis/uv">
+      <div>
+         <p>Add up to 2 more sites and replot for "Temperature, water, degrees Celsius"</p>
+        <div class="helpBtn">
+         <a oldtitle="'Enter up to 2 site numbers separated by a comma. A site number consists of 8 to 15 digits'" href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#search_full_site_no" id="search_full_site_no"><span>?</span></a>
+        </div>&nbsp;Add site numbers
+        <div class="helpBtn NoteBtn">
+         <a oldtitle="Caution: When viewing a plot with multiple sites, it is important to understand the characteristics of data being plotted. For example, some parameters are measured from a reference point that varies from site to site, such as water-level depth below land surface datum for wells, and gage height for streams. Calculating the difference between values at sites with different altitudes would have limited meaning." href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#add_mult_sites" id="add_mult_sites"><span>Note</span></a>
+        </div>
+        <br>
+         <textarea tabindex="10" id="add_mult_sites_07164500_14_00010" class="add_mult_sites" alt="Number 8 to 15 long that uniquely defines a site" name="site_no" cols="20" rows="8">Enter up to 2 site numbers separated by a comma. A site number consists of 8 to 15 digits</textarea>
+         <input id="format_07164500_14_00010" name="format" value="gif_mult_sites" type="hidden">
+         <input id="parameter_07164500_14_00010" name="PARAmeter_cd" value="00010" type="hidden">
+         <input id="period_07164500_14_00010" name="period" value="7" type="hidden">
+        <br>
+         <input id="go_07164500_14_00010" class="go_mult_sites" value="GO" type="submit">
+        <br>
+      </div>
+     </form>
+   </div>
+   <div class="clear"></div>
+   
+   <font size="-1"> Create <a href="http://waterdata.usgs.gov/nwis/uv/?dd_cd=14_00010&amp;format=img_default&amp;site_no=07164500&amp;set_arithscale_y=on&amp;period=7">presentation-quality</a>
+     / <a href="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=07164500&amp;parm_cd=00010&amp;period=7">stand-alone</a>   graph. &nbsp; Subscribe to <div class="helpBtn"><a oldtitle="Subscribe to recieve e-mail or text messages when certain parameters, as measured by a USGS real-time data-collection station, exceed user-definable thresholds." href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#water_alert" id="water_alert"><span>?</span></a></div> <a onmousedown="_sendEvent('Outbound','water.usgs.gov','/wateralert/',0);" href="http://water.usgs.gov/wateralert/" target="_blank"> </a><a onmousedown="_sendEvent('Outbound','water.usgs.gov','/wateralert/subscribe2',0);" href="http://water.usgs.gov/wateralert/subscribe2?site_no=07164500&amp;parm=00010" target="_blank">WaterAlert</a> &nbsp; &nbsp; &nbsp;  </font>
+   <font size="-4"></font><br>
+   
+   <br>
+   <div class="addthis_toolbox addthis_default_style " addthis:url="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=07164500&amp;parm_cd=00010&amp;period=7" addthis:title="USGS graph">
+   <a onmousedown="_sendEvent('Outbound','www.addthis.com','/bookmark.php',0);" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4f4f8fe755190329" class="addthis_button_compact">Share this graph</a>
+   <span class="addthis_separator">|</span>
+   <a class="addthis_button_preferred_1"></a>
+   <a class="addthis_button_preferred_2"></a>
+   <a class="addthis_button_preferred_3"></a>
+   <a class="addthis_button_preferred_4"></a>
+   </div><br>
+
+
+</div>
+
+<!-- Stats table -->
+<div class="stationContainerSubHeading">
+
+</div>
+<div class="clear"></div>
+
+</div>
+
+<div class="stationContainer">
+
+<hr>
+<div class="stationContainerHeading">
+<a name="gifno-99"><br><strong>Dissolved oxygen, water, unfiltered, milligrams per liter</strong></a>  
+<br>
+</div>
+
+Most recent instantaneous value: 8.6 &nbsp; 06-14-2015&nbsp; 08:30 CDT 
+ 
+
+
+<div class="clear"></div>
+
+<div class="stationContainerSubHeading">
+   <div id="table_07164500_30_00300" border="0" class="iv_graph_float1">    
+    <img src="gauge3_files/USGS_002.gif" alt="Graph of " height="384" border="0" width="576"> 
+   </div>
+   
+   <div class="iv_graph_float2">
+          <form id="form_mult_sites_07164500_30_00300" class="add_mult_sites" method="get" action="/nwis/uv">
+      <div>
+         <p>Add up to 2 more sites and replot for "Dissolved oxygen, water, unfiltered, milligrams per liter"</p>
+        <div class="helpBtn">
+         <a oldtitle="'Enter up to 2 site numbers separated by a comma. A site number consists of 8 to 15 digits'" href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#search_full_site_no" id="search_full_site_no"><span>?</span></a>
+        </div>&nbsp;Add site numbers
+        <div class="helpBtn NoteBtn">
+         <a oldtitle="Caution: When viewing a plot with multiple sites, it is important to understand the characteristics of data being plotted. For example, some parameters are measured from a reference point that varies from site to site, such as water-level depth below land surface datum for wells, and gage height for streams. Calculating the difference between values at sites with different altitudes would have limited meaning." href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#add_mult_sites" id="add_mult_sites"><span>Note</span></a>
+        </div>
+        <br>
+         <textarea tabindex="10" id="add_mult_sites_07164500_30_00300" class="add_mult_sites" alt="Number 8 to 15 long that uniquely defines a site" name="site_no" cols="20" rows="8">Enter up to 2 site numbers separated by a comma. A site number consists of 8 to 15 digits</textarea>
+         <input id="format_07164500_30_00300" name="format" value="gif_mult_sites" type="hidden">
+         <input id="parameter_07164500_30_00300" name="PARAmeter_cd" value="00300" type="hidden">
+         <input id="period_07164500_30_00300" name="period" value="7" type="hidden">
+        <br>
+         <input id="go_07164500_30_00300" class="go_mult_sites" value="GO" type="submit">
+        <br>
+      </div>
+     </form>
+   </div>
+   <div class="clear"></div>
+   
+   <font size="-1"> Create <a href="http://waterdata.usgs.gov/nwis/uv/?dd_cd=30_00300&amp;format=img_default&amp;site_no=07164500&amp;set_arithscale_y=on&amp;period=7">presentation-quality</a>
+     / <a href="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=07164500&amp;parm_cd=00300&amp;period=7">stand-alone</a>   graph. &nbsp; Subscribe to <div class="helpBtn"><a oldtitle="Subscribe to recieve e-mail or text messages when certain parameters, as measured by a USGS real-time data-collection station, exceed user-definable thresholds." href="http://help.waterdata.usgs.gov/codes-and-parameters/codes#water_alert" id="water_alert"><span>?</span></a></div> <a onmousedown="_sendEvent('Outbound','water.usgs.gov','/wateralert/',0);" href="http://water.usgs.gov/wateralert/" target="_blank"> </a><a onmousedown="_sendEvent('Outbound','water.usgs.gov','/wateralert/subscribe2',0);" href="http://water.usgs.gov/wateralert/subscribe2?site_no=07164500&amp;parm=00300" target="_blank">WaterAlert</a> &nbsp; &nbsp; &nbsp;  </font>
+   <font size="-4"></font><br>
+   
+   <br>
+   <div class="addthis_toolbox addthis_default_style " addthis:url="http://waterdata.usgs.gov/nwisweb/graph?agency_cd=USGS&amp;site_no=07164500&amp;parm_cd=00300&amp;period=7" addthis:title="USGS graph">
+   <a onmousedown="_sendEvent('Outbound','www.addthis.com','/bookmark.php',0);" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4f4f8fe755190329" class="addthis_button_compact">Share this graph</a>
+   <span class="addthis_separator">|</span>
+   <a class="addthis_button_preferred_1"></a>
+   <a class="addthis_button_preferred_2"></a>
+   <a class="addthis_button_preferred_3"></a>
+   <a class="addthis_button_preferred_4"></a>
+   </div><br>
+
+
+</div>
+
+<!-- Stats table -->
+<div class="stationContainerSubHeading">
+
+</div>
+<div class="clear"></div>
+
+</div>
+
+  
+<div id="nwisweb_footer">
+
+<div class="clear"></div>
+
+<div id="usgssubfooter">
+<hr>
+	<div id="leftsubfooter">
+		<a onmousedown="_sendEvent('Outbound','answers.usgs.gov','/cgi-bin/gsanswers',0);" href="http://answers.usgs.gov/cgi-bin/gsanswers?pemail=h2oteam&amp;subject=Site+Number:%2007164500&amp;viewnote=%3CH1%3EUSGS+NWIS+Feedback+Request%3C/H1%3E%3Cp%3E%3Cb%3EPlease%20enter%20a%20subject%20in%20the%20form%20below%20that%20briefly%20summarizes%20your%20request%3C/b%3E%3C/p%3E" target="_blank">Questions about sites/data?</a><br>
+		<a onmousedown="_sendEvent('Outbound','answers.usgs.gov','/cgi-bin/gsanswers',0);" href="http://answers.usgs.gov/cgi-bin/gsanswers?pemail=gs-w_support_nwisweb&amp;cemail=gs-w_NWISWeb_Feedback&amp;subject=Site+Number:%2007164500&amp;viewnote=%3CH1%3EUSGS+NWIS+Feedback+Request%3C/H1%3E%3Cp%3E%3Cb%3EPlease%20enter%20a%20subject%20in%20the%20form%20below%20that%20briefly%20summarizes%20your%20request%3C/b%3E%3C/p%3E" target="_blank">Feedback on this web site</a><br>
+		   <a href="http://help.waterdata.usgs.gov/faq/automated-retrievals">Automated retrievals</a>
+ <br>
+		<a href="http://help.waterdata.usgs.gov/">Help</a><br>
+	</div>
+
+	<div id="rightsubfooter">
+		<a onmousedown="_sendEvent('Outbound','water.usgs.gov','/data/watertips.html',0);" href="http://water.usgs.gov/data/watertips.html">Data Tips</a><br>
+		<a onmousedown="_sendEvent('Outbound','ga.water.usgs.gov','/edu/dictionary.html',0);" href="http://ga.water.usgs.gov/edu/dictionary.html">Explanation of terms</a><br>
+		   <!--<a href="/nwis/help/help?form=email">Subscribe for system changes</a>-->
+   <!--<a href="/nwis/subscribe/help?form=email">Subscribe for system changes</a>-->
+   <a href="http://waterdata.usgs.gov/nwis/subscribe?form=email">Subscribe for system changes</a>
+ <br>
+		<a href="http://help.waterdata.usgs.gov/news">News</a><br>
+	</div>
+
+</div>
+
+<div class="clear"></div>
+
+
+
+<!-- BEGIN USGS Footer Template -->
+<div id="usgsfooter">
+  <p id="usgsfooterbar">
+  <a onmousedown="_sendEvent('Outbound','www.usgs.gov','/laws/accessibility.html',0);" oldtitle="Accessibility Policy (Section 508)" href="http://www.usgs.gov/laws/accessibility.html">Accessibility</a>
+  <a onmousedown="_sendEvent('Outbound','www.usgs.gov','/laws/accessibility.html',0);" oldtitle="plug-in available here" href="http://www.usgs.gov/laws/accessibility.html">Plug-Ins</a>
+  <a onmousedown="_sendEvent('Outbound','www.usgs.gov','/foia/',0);" oldtitle="Freedom of Information Act" href="http://www.usgs.gov/foia/">FOIA</a>
+  <a onmousedown="_sendEvent('Outbound','www.usgs.gov','/privacy.html',0);" oldtitle="Privacy policies of the U.S. Geological Survey." href="http://www.usgs.gov/privacy.html">Privacy</a>
+  <a onmousedown="_sendEvent('Outbound','www.usgs.gov','/policies_notices.html',0);" oldtitle="Policies and notices that govern information posted on USGS Web sites." href="http://www.usgs.gov/policies_notices.html">Policies and Notices</a>
+  </p>
+  <p id="usgsfootertext">
+    <a onmousedown="_sendEvent('Outbound','www.usa.gov','/',0);" href="http://usa.gov/"><img src="gauge3_files/USGS_footer_graphic_usagov.jpg" alt="USA.gov logo" title="USAGov: Government Made Easy" height="26" width="90"></a>
+
+    <a onmousedown="_sendEvent('Outbound','www.doi.gov','/',0);" href="http://www.doi.gov/">U.S. Department of the Interior</a> |
+    <a onmousedown="_sendEvent('Outbound','www.usgs.gov','/',0);" href="http://www.usgs.gov/">U.S. Geological Survey</a><br>
+    <b>Title: USGS Current Conditions for the Nation <br>
+    URL: http://waterdata.usgs.gov/nwis/uv?<br><br></b>
+    Page Contact Information: <a onmousedown="_sendEvent('Outbound','answers.usgs.gov','/cgi-bin/gsanswers',0);" href="http://answers.usgs.gov/cgi-bin/gsanswers?pemail=gs-w_support_nwisweb&amp;cemail=gs-w_NWISWeb_Feedback&amp;subject=Site+Number:%2007164500&amp;viewnote=%3CH1%3EUSGS+NWIS+Feedback+Request%3C/H1%3E%3Cp%3E%3Cb%3EPlease%20enter%20a%20subject%20in%20the%20form%20below%20that%20briefly%20summarizes%20your%20request%3C/b%3E%3C/p%3E" target="_blank">Oklahoma Water Data Support Team</a><br>
+    Page Last Modified: 2015-06-14 10:05:00 EDT<br>
+    <font size="-2"> 0.64 &nbsp; 0.56 caww02<br></font>
+   </p>
+</div>
+<br>
+<!-- END USGS Footer Template -->
+</div> <!-- nwisweb_footer -->
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
