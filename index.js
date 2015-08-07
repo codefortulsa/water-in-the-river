@@ -1,3 +1,5 @@
+require('newrelic');
+
 var cheerio = require('cheerio');
 var express = require('express');
 var key = require('./lib/keystone');
