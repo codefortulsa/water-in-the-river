@@ -11,8 +11,7 @@
     "cheerio": "^0.19.0",
     "express": "~4.9.x",
     "promise": "^7.0.1",
-    "request": "^2.57.0",
-    "string": "^3.2.0"
+    "request": "^2.57.0"
   },
   "devDependencies": {
     "chai": "^3.0.0",
